@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+h1 {
+  position: relative;
+  top: 5%;
+}
+
+h2 {
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+
+}
+.column {
+  width: 25%;
+  display: inline-block;
+  margin: auto;
+}
+
+
+.card{
+  height: 100px;
+  width: 100%;
+  display: inline-block;
+  border: solid 1px #eee;
+  background-color: #B5C2F1;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.card:hover > h1 {
+  color: white;
+}
+
+#button {
+   border: 1px solid #ccc;
+   display: inline-block;
+   border-radius: 6px;
+   width: 20%;
+   margin: auto;
+}
+
+#button:hover {
+     background-color: black;
+       color: white;
+}
+
+input {
+  width: 15%;
+}
+
+#answer {
+  padding: 20px;
+  font-weight: normal;
+
+}
