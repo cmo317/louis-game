@@ -16,7 +16,15 @@ $("#button").click ( function () {
 var answer1 = parseInt(document.getElementById("box1").value)
 var answer2 = parseInt(document.getElementById("box2").value)
 $("#answer").empty()
-if (((answer1 == 1 ) && (answer2 == 6)) || ((answer1 == 6) && (answer2 == 1))) { $("#answer").text("yes! yay!")
-console.log("yes")}
-else {$("#answer").text("no :( try again")}
+if (((answer1 == 1 ) && (answer2 == 6)) || ((answer1 == 6) && (answer2 == 1))) {
+	$("#answer").text("yes! yay!")
+}
+else if (isNaN(answer1) && isNaN(answer2)) {
+		$("#answer").text("you didn't even try :(")
+}
+else if (isNaN(answer1) || isNaN(answer2)) {
+		$("#answer").text("try a little harder")
+}
+else {$("#answer").text("no :( try again")
+}
 });

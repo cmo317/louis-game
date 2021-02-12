@@ -2,6 +2,7 @@ body {
   font-family: sans-serif;
   text-align: center;
   font-variant: small-caps;
+  background-color: #f0f0f5;
 }
 
 h1 {
@@ -13,18 +14,21 @@ h2 {
   font-weight: bold;
   color: black;
   padding: 10px;
-
 }
+
 .column {
   width: 25%;
   display: inline-block;
-  margin: auto;
+  margin: 0 auto;
+  max-width: 200px;
+  min-width: 150px;
+  position: relative;
 }
-
 
 .card{
   height: 100px;
-  width: 100%;
+  width: 150px;
+  margin-top: 3px;
   display: inline-block;
   border: solid 1px #eee;
   background-color: #B5C2F1;
@@ -44,6 +48,7 @@ h2 {
    border-radius: 6px;
    width: 20%;
    margin: auto;
+   background-color: #e0e0eb;
 }
 
 #button:hover {
@@ -53,6 +58,10 @@ h2 {
 
 input {
   width: 15%;
+}
+
+#topBanner > h2 {
+  background-color: #e0e0eb;
 }
 
 #answer {
